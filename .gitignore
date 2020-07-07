@@ -67,8 +67,6 @@ flycheck_*.el
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-#!! ERROR: nano is undefined. Use list command to see defined gitignore types !!#
-
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -89,7 +87,8 @@ tags
 # Persistent undo
 [._]*.un~
 
-#!! ERROR: vscode is undefined. Use list command to see defined gitignore types !!#
+# Doctoc
+.pre-commit-config.yaml
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,linux,vscode,emacs,nano
 n
