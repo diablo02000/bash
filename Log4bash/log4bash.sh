@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #####
-## Create logging bash library 
+## Create logging bash library
 
 # Set output log level.
 # The available option are:
@@ -22,6 +22,9 @@ declare -r LOG4BASH_DATE_FMT="${LOG4BASH_DATE_FMT:=%D %X}"
 
 # Define max log message length.
 declare -r LOG4BASH_MAX_MESSAGE_LENGTH=100
+
+# Enable/Disable color
+declare -r LOG4BASH_ENABLE_COLOR_MODE=1
 
 #########################################################
 ## Main function
@@ -81,7 +84,7 @@ function _log4bash_output(){
 	local log_lvl_int="$(_get_log_level_index "${log_lvl}")"
 
 	# Declare empty array to store method's parameters
-	declare -a _args	
+	declare -a _args
 
 	# Add colors code is output color is enable.
 	if [[ ${LOG4BASH_OUTPUT_IN_COLOR} -gt 0 ]];
@@ -93,7 +96,7 @@ function _log4bash_output(){
 		_args+=("${log_lvl}")
 	fi
 
-	# Append date time 
+	# Append date time
 	_args+=("$(date +"${LOG4BASH_DATE_FMT}")")
 	_args+=("${log_message}")
 
