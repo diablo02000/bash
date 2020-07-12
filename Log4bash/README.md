@@ -27,7 +27,7 @@ source Log4bash/log4bash.sh
 ## Variables
 
 | Names  | Default  | Descriptions  |
-|:-:|:-:|:-:|
+|---|:-:|---|
 | LOG4BASH_LOG_LEVEL | INFO | Define log level. |
 | LOG4BASH_DATE_FMT | `%D %X` | Define date format. (man date to see date format) |
 | LOG4BASH_MAX_MESSAGE | 100 | Define max message length in the line. |
@@ -36,7 +36,7 @@ source Log4bash/log4bash.sh
 ## Functions
 
 | Names | Descriptions  |
-|:-:|:-:|
+|---|---|
 | log4bash_debug | Print Debug log. |
 | log4bash_info | Print Info log. |
 | log4bash_warn | Print Warnning log. |
