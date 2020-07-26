@@ -7,6 +7,7 @@
 - [Install](#install)
 - [Librairies](#librairies)
   - [Log4bash](#log4bash)
+  - [Compare Versions](#compare-versions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -21,3 +22,7 @@ git clone https://github.com/diablo02000/bash.git
 ### Log4bash
 
 Small shell script to standardized log output. [doc](https://github.com/diablo02000/bash/tree/master/Log4bash)
+
+### Compare Versions
+
+Small shell script to compare 2 versions. [doc](https://github.com/diablo02000/bash/tree/master/compare_versions)
