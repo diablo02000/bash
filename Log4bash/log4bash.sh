@@ -23,9 +23,6 @@ declare -r LOG4BASH_DATE_FMT="${LOG4BASH_DATE_FMT:=%D %X}"
 # Define max log message length.
 declare -r LOG4BASH_MAX_MESSAGE_LENGTH=100
 
-# Enable/Disable color
-declare -r LOG4BASH_ENABLE_COLOR_MODE=1
-
 #########################################################
 ## Main function
 
@@ -54,7 +51,7 @@ declare -r LOG4BASH_DEFAULT_TEXT_FMT="[%s] - %s - %-${LOG4BASH_MAX_MESSAGE_LENGT
 declare -r LOG4BASH_DEFAULT_COLOR_TEXT_FMT="[%b%s%b] - %s - %-${LOG4BASH_MAX_MESSAGE_LENGTH}s\n"
 
 # Enable/Disable color mode
-declare -r LOG4BASH_ENABLE_COLOR_MODE=${LOG4BASH_ENABLE_COLOR_MODE:=0}
+declare -r LOG4BASH_ENABLE_COLOR_MODE=${LOG4BASH_ENABLE_COLOR_MODE:=1}
 
 # Define color code
 declare -r DEBUG="\e[96m"
